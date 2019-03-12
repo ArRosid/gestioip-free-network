@@ -1,5 +1,5 @@
 # gestioip_free_network
-Get Available Network Range From GestioIP
+Get Available Network Range, Next free VLAN From GestioIP
 
 GestióIP (https://www.gestioip.net/) is an automated, Web based IPv4/IPv6 address management (IPAM) software. It features powerful network discovery functions and offers search and filter functions for both networks and host, permitting Internet Search Engine equivalent expressions. This lets you find the information that administrators frequently need easily and quickly.
 
