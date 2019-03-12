@@ -30,4 +30,19 @@ def get_free_net():
 
     return free_network
 
+def get_next_vlan():
+    sql = """SELECT * FROM vlans """
+    all_vlan = dbs.queryall(sql)
+
+    # print(all_vlan)
+    vlan_num = []
+    for vlan in all_vlan:
+        vlan_num.append(vlan['vlan_num'])
+    
+    last_vlan = max(vlan_num)
+    next_vlan = int(last_vlan) + 1
+    return next_vlan
+
+print(get_next_vlan())
+
 print(get_free_net())

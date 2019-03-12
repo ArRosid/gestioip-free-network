@@ -18,7 +18,7 @@ class MyDB():
 			e = self.cursor.execute(sql, *args)
 			self.connection.commit()
 			self.cursor.close()
-		except mdb.Error, e:
+		except (mdb.Error, e):
 			print(traceback.format_exc())
 			self.connection.rollback()
 		self.cursor.close()
